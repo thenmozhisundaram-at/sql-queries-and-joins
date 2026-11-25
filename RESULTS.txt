@@ -1,0 +1,56 @@
+# Query Results
+
+Expected results from running `queries.sql` with SQLite.
+
+## Question 1: Which products did each customer buy, and on what date?
+
++---------------+------------+----------------------+----------+
+| customer_name | order_date | product_name         | quantity |
++---------------+------------+----------------------+----------+
+| Aarav Sharma  | 2026-11-01 | SQL Basics           | 1        |
+| Aarav Sharma  | 2026-11-01 | The Hidden Garden    | 2        |
+| Maya Patel    | 2026-11-02 | Ocean Adventures     | 2        |
+| Maya Patel    | 2026-11-02 | Python for Beginners | 1        |
+| Aarav Sharma  | 2026-11-05 | Everyday Science     | 1        |
+| Aarav Sharma  | 2026-11-05 | SQL Basics           | 1        |
+| Riya Kumar    | 2026-11-07 | Mystery at Midnight  | 1        |
+| Riya Kumar    | 2026-11-07 | The Hidden Garden    | 1        |
+| Kabir Singh   | 2026-11-10 | Ocean Adventures     | 3        |
++---------------+------------+----------------------+----------+
+
+## Question 2: How much money did each customer spend in total?
+
++---------------+-------------+
+| customer_name | total_spent |
++---------------+-------------+
+| Aarav Sharma  | 1900.0      |
+| Maya Patel    | 1050.0      |
+| Kabir Singh   | 750.0       |
+| Riya Kumar    | 650.0       |
++---------------+-------------+
+
+## Question 3: What is the total quantity sold and revenue for each category?
+
++------------+------------+------------------+
+| category   | units_sold | category_revenue |
++------------+------------+------------------+
+| Technology | 3          | 1450.0           |
+| Fiction    | 4          | 1250.0           |
+| Children   | 5          | 1250.0           |
+| Education  | 1          | 400.0            |
++------------+------------+------------------+
+
+## Question 4: Which customers have not placed any orders?
+
++-------------+---------------+-----------+
+| customer_id | customer_name | city      |
++-------------+---------------+-----------+
+| 5           | Ananya Das    | Hyderabad |
++-------------+---------------+-----------+
+
+## Question 5: Which products have never been ordered?
+
++------------+--------------+----------+
+| product_id | product_name | category |
++------------+--------------+----------+
++------------+--------------+----------+
